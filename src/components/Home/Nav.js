@@ -3,7 +3,6 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import DashboardIcon from '@material-ui/icons/Dashboard';
-import HistoryIcon from '@material-ui/icons/History';
 import ShopIcon from '@material-ui/icons/Shop';
 import { useStateValue } from '../../providers/StateProvider';
 import { NAV_CHANGED } from '../../utils';
@@ -31,12 +30,6 @@ export default function Nav() {
           <ShopIcon />
         </ListItemIcon>
         <ListItemText primary="Create Evoucher" />
-      </ListItem>
-      <ListItem button onClick={() => handleChange('history')}>
-        <ListItemIcon>
-          <HistoryIcon />
-        </ListItemIcon>
-        <ListItemText primary="Purchase History" />
       </ListItem>
     </div>
   );

@@ -120,7 +120,8 @@ export default function EvoucherForm({
               ];
               const payload = {
                 ...data,
-                paymentMethod: JSON.stringify(paymentMethod),
+                // paymentMethod: JSON.stringify(paymentMethod),
+                paymentMethod,
               };
 
               if (mode === 'edit') {
